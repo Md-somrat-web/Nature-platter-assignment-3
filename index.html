@@ -23,65 +23,88 @@
     <style></style>
   </head>
   <body>
-    <header class="bg-[#EFEBE3] mx-32">
-      <nav>
-        <div class="navbar bg-base-100">
-          <div class="navbar-start">
-            <div class="dropdown">
-              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-5 w-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+    <div class="bg-[#EFEBE3]">
+      <header class="mx-32">
+        <nav>
+          <div class="navbar">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16"
+                    />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
                 >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M4 6h16M4 12h8m-8 6h16"
-                  />
-                </svg>
+                  <li><a>Product</a></li>
+                  <li>
+                    <a>Services</a>
+                  </li>
+                  <li><a>Contact us</a></li>
+                </ul>
               </div>
-              <ul
-                tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-              >
-                <li><a>Product</a></li>
-                <li>
+              <a class="btn btn-ghost text-xl text-[#179800]"
+                ><img src="image/nav-logo.png" alt=""
+              /></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class="text-xl"><a>Product</a></li>
+                <li class="text-xl">
                   <a>Services</a>
                 </li>
-                <li><a>Contact us</a></li>
+                <li class="text-xl"><a>Contact us</a></li>
               </ul>
             </div>
-            <a class="btn btn-ghost text-xl text-[#179800]"
-              >Nature <br />Platter</a
-            >
+            <div class="navbar-end gap-6">
+              <a> <i class="fa-solid fa-magnifying-glass"></i></a>
+              <a><i class="fa-solid fa-cart-shopping"></i></a>
+              <a
+                class="btn py-[10px] px-[30px] rounded-lg bg-transparent border border-[#179800] hover:bg-[#179800]"
+                >login</a
+              >
+              <a
+                class="btn py-[10px] px-[30px] text-white bg-[#179800] rounded-lg"
+                >Register</a
+              >
+            </div>
           </div>
-          <div class="navbar-center hidden lg:flex">
-            <ul class="menu menu-horizontal px-1">
-              <li class="text-xl"><a>Product</a></li>
-              <li class="text-xl">
-                <a>Services</a>
-              </li>
-              <li class="text-xl"><a>Contact us</a></li>
-            </ul>
+        </nav>
+
+        <!-- banner section start  -->
+        <div class="banner my-20">
+          <div class="text-center">
+            <h1 class="text-[56px] font-semibold leading-none">
+              Freshness <span class="text-[#179800]">You Can</span> <br />
+              <span class="text-[#179800]">count</span> On, Prices You’ll Love!
+            </h1>
+            <p class="text-xl mt-8">
+              Shop your daily essentials at unbeatable prices. From fresh
+              produce to pantry <br />
+              staples, we’ve got you covered every day!
+            </p>
           </div>
-          <div class="navbar-end gap-6">
-            <a> <i class="fa-solid fa-magnifying-glass"></i></a>
-            <a><i class="fa-solid fa-cart-shopping"></i></a>
-            <a
-              class="btn py-[10px] px-[30px] rounded-lg bg-transparent border border-[#179800]"
-              >login</a
-            >
-            <a
-              class="btn py-[10px] px-[30px] text-white bg-[#179800] rounded-lg"
-              >Register</a
-            >
+          <div>
+            <div
+              class="bg-[url('/image/banner.png')] bg-no-repeat bg-cover h-[838px] w-[1031px] mt-9"
+            ></div>
           </div>
         </div>
-      </nav>
-    </header>
+        <!-- banner section End  -->
+      </header>
+    </div>
   </body>
 </html>
